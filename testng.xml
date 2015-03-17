@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE testNG SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AutoTestOJ" thread-count="5" parallel="false">
+	<!--<parameter name="browser" value="firefox"></parameter>
+	<parameter name="browserDir"
+		value="D:/Program Files (x86)/Mozilla Firefox/firefox.exe"></parameter>
+	  <parameter name="baseURL" value="http://192.168.1.131/JudgeOnline/">
+	</parameter>-->
+
+	<test name="AutoTestOJ_firefox">
+		<classes>
+			<!-- 同一级别的测试执行会按照class配置的先后顺序执行 -->
+			<!-- 非同一级别的测试仍按照testNG的优先级执行，Suite > Class > Test -->
+			<class name="org.wkjsj.hz.testcase.page.CheckLinkPageTest"></class>
+			<class name="org.wkjsj.hz.testcase.page.AdminTest"></class>
+			<class name="org.wkjsj.hz.testcase.page.SubmitProblemTest"></class>
+
+
+		</classes>
+	</test>
+</suite>

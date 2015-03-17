@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int Themost(int a,int b)
+{
+	int t,aa,bb;
+    aa=(a>b?a:b);
+    bb=(a>b?b:a);
+    t=aa-bb;
+    if(t==0)  return aa;
+    else Themost(bb,t);
+} 
+       
+int main()
+{
+   int N,a,b,n;
+
+    cin>>a>>b;
+    N=(a+b)*100;
+
+       
+         
+        n=(a+b)*100*100;
+       if(!(n%Themost(a,b)))
+        cout<<a+b<<endl;
+       else cout<<a+b<<endl;
+   
+    return 0;
+}

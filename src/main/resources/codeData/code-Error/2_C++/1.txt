@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int  main(){
+int a;
+int b;
+int c[100000]={0};
+cin>>a>>b;
+for(int i=0;i<99999;i++ ){
+c[i]=a;
+c[i+1]=b;
+}
+cout<<c[0]+c[1]<<endl;
+
+return 0;
+}
